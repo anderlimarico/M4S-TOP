@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#122a42" />
+    <meta
+      name="description"
+      content="Gestão física de estoque, produção e Full M4S"
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>M4S Fluxo • Produção e Full</title>
+  </head>
+  <body>
+    <aside>
+      <a class="brand" href="#dashboard"
+        ><b>M4S<span>●</span></b
+        ><small>FLUXO · GESTÃO VISUAL</small></a
+      >
+      <nav id="nav"></nav>
+      <div class="aside-note">
+        Cada peça, no lugar certo.<br /><small>Produção → Estoque → Full</small>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <small>SEU CENTRO DE OPERAÇÕES</small>
+          <h1 id="title"></h1>
+        </div>
+        <span class="badge" id="connection"></span>
+      </header>
+      <div id="notice" role="status"></div>
+      <section id="view"></section>
+      <footer>
+        Dados neste aparelho · Faça backups regularmente
+        <button id="install" hidden>Instalar aplicativo</button>
+      </footer>
+    </main>
+    <dialog id="modal">
+      <form id="form">
+        <div class="dialog-head">
+          <h2 id="modal-title"></h2>
+          <button type="button" id="close" aria-label="Fechar">✕</button>
+        </div>
+        <div id="fields"></div>
+        <p id="error" role="alert"></p>
+        <button class="primary" type="submit">Confirmar e registrar</button>
+      </form>
+    </dialog>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
